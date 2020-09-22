@@ -18,9 +18,8 @@
     "gulp-sass": "^4.1.0"
   },
   "browserslist": [
-    "defaults",
-    "not IE 11",
-    "not IE_Mob 11",
-    "maintained node versions"
+    "last 1 version",
+    "> 1%",
+    "IE 10"
   ]
 }
