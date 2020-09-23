@@ -54,5 +54,16 @@
 	}
 	.title {
 		font-size: 22px;
+		&_left {
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+	.consultation {
+		padding: 60px 0 40px 0;
+		&__descr {
+			margin-top: 50px;
+			font-size: 18px;
+		}
 	}
 }
