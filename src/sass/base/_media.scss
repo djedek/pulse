@@ -2,6 +2,15 @@
 	.container {
 		padding: 0 10px;
 	}
+	.carousel {
+		.tns-item {
+			img {
+				width: 70%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
 }
 @media (max-width: 768px) {
 	.header {
@@ -22,6 +31,31 @@
 		&__item {
 			max-width: 435px;
 			margin-bottom: 30px;
+		}
+	}
+	.carousel {
+		.tns-nav {
+			display: block;
+			text-align: center;
+			button {
+				width: 30px;
+				height: 30px;
+				margin: 0 15px 0;
+				border: none;
+				border-radius: 100%;
+				background-color: rgba(128, 128, 128, 0.2);
+			}
+			.tns-nav-active {
+				background-color: $main_color;
+			}
+		}
+		.tns-item {
+			img {
+				width: 90%;
+			}
+		}
+		.prev, .next {
+			display: none;
 		}
 	}
 }
