@@ -80,6 +80,12 @@
 			}
 		}
 	}
+	.footer {
+		&__info {
+			width: 310px;
+			padding: 20px 0 20px 0;
+		}
+	}
 }
 @media (max-width: 576px) {
 	.promo {
