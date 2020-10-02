@@ -128,4 +128,14 @@
 			font-size: 18px;
 		}
 	}
+	.feed-form {
+		&_mt25 {
+			width: 100%;
+		}
+	}
+	.modal {
+		width: 220px;
+		min-height: 360px;
+		padding: 10px;
+	}
 }
