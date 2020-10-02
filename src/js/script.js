@@ -75,6 +75,24 @@ $(document).ready(function(){
 	valideForms('#consultation-form');
 	valideForms('#consultation form');
 	valideForms('#order form');
+
+	$('input[name=phone]').mask("+9 (999) 999-99-99");
+
+	$('form').submit(function(e) {
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: "mailer/smart.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			$('#consultation, #order').fadeOut();
+			$('.overlay, #thanks').fadeIn('slow');
+
+			$('form').trigger('reset');
+		});
+		return false;
+	});
 });
 
 const slider = tns({
