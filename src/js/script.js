@@ -110,6 +110,8 @@ $(document).ready(function(){
 		return false;
 	});
 
+	new WOW().init();
+
 });
 
 const slider = tns({
